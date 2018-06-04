@@ -12,6 +12,8 @@ section {
   padding: 2em;
 }
 
+.showOnMobile {display: none;}
+
 .project-block {
   margin: 0 auto;
   width: 103%;
@@ -175,5 +177,43 @@ ul, li {
 #bio {
   font-size: 40px;
 }
+
+section {
+  margin: 0 auto;
+  width: 90%;
+  padding: 0;
+}
+
+.project-block {
+  margin: 0 auto;
+  width: 103%;
+  margin-left: -1.5%;
+  height: 7em;
+  background-color: yellow;
+  border-radius: 10px;
+  margin-top: 1em;
+  position: relative;
+  -webkit-transition: background-color .2s; /* For Safari 3.0 to 6.0 */
+  transition: background-color .2s; /* For modern browsers */
+}
+
+.project-text-wrapper {
+  position: absolute;
+  left: 1.4em;
+  margin-right: 0em;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.project-bio {
+  margin: 0;
+  color: white;
+  font-family: 'Lato';
+  font-size: 14px;
+}
+
+.showOnMobile {display: inline;}
 
 }
