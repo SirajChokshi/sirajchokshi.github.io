@@ -90,6 +90,14 @@ section {
   background-color: rgb(88, 86, 194);
 }
 
+#proj7 {
+  background-color: #FF851B;
+}
+
+#proj7:hover {
+  background-color: #ff7600;
+}
+
 
 h1, h2, h3 {
   font-family: 'Montserrat';
