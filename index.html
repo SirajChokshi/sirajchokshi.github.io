@@ -1,111 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6756ff">
-  <meta name="msapplication-TileColor" content="#6756ff">
-  <meta name="theme-color" content="#6756ff">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/brands.js" integrity="sha384-G/XjSSGjG98ANkPn82CYar6ZFqo7iCeZwVZIbNWhAmvCF2l+9b5S21K4udM7TGNu" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-  <link href="dist/aos.css" rel="stylesheet">
-  <script src="dist/aos.js"></script>
-  <title>Siraj Chokshi</title>
-</head>
 
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Siraj Chokshi - Projects</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <style>
+    .one-half {
+       margin-top: 30px;
+    }
+  </style>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
 <body>
 
-  <section>
-    <div style="display: inline-block; margin: 0 auto; text-align: left;" align="center" id="bio-wrap">
-      <h2 style="margin-bottom: 0; text-align: left;" id="hi">Hi,</h2><br>
-      <h1 style="margin-top: 0; text-align: left;" id="bio">I'm Siraj, a student and aspiring UX Designer.</h1>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="margin-top: 10%">
+        <section class="header">
+          <h2 class="title"><a href="https://sirajchokshi.com/">Siraj Chokshi</a> &mdash; Projects, Repositories & Extras</h2>
+        </section>
+      </div>
     </div>
-
-    <ul id="social-list">
-      <li><a href="https://www.twitter.com/sirajchokshi" target="_blank"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://www.dribbble.com/sirajchokshi" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-      <li><a href="https://www.behance.net/sirajchokshi" target="_blank"><i class="fab fa-behance"></i></a></li>
-      <li><a href="https://www.github.com/sirajchokshi" target="_blank"><i class="fab fa-github-alt"></i></a></li>
-      <li><a href="https://medium.com/@SirajChokshi" target="_blank"><i class="fab fa-medium-m"></i></a></li>
-    </ul>
-
-    <br><br><br>
-
-    <h2 style="margin: 0; text-align: left;">Repositories & Projects</h2>
-
-    <div class="project-block" id="proj1" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-bottom" data-aos-delay="100"><a href="https://sirajchokshi.github.io/Javascript-Form-Style/" target="_blank">
-      <div class="project-text-wrapper">
-        <h3>JavaScript Form Validation</h3>
-        <p class="project-bio">A modifyable template utilizing HTML 5 pattern validation along with jQuery and JavaScript. <span class="showOnMobile"><br></span> Read more...</p>
-      </div></a>
+    <div class="row">
+      <div class="one-half column">
+        <h4>&#x2714; JavaScript Form Validation</h4>
+        <p>An HTML5/Javascript based form. The requirements are made with input modifier and type strings. Some JQuery is used for aesthetic purposes.</p>
+        <a class="button button-primary" href="https://github.com/SirajChokshi/Javascript-Form-Style">Repository</a>
+        <a class="button" href="https://sirajchokshi.github.io/Javascript-Form-Style/">Demo</a>
+      </div>
+      <div class="one-half column">
+        <h4>&#x1F3A8; Studio Theme</h4>
+        <p>A free Bootstrap theme that functions as a one-page, easy-to-implement landing page template for products and services.</p>
+        <a class="button button-primary" href="https://github.com/SirajChokshi/StudioTheme">Repository</a>
+        <a class="button" href="https://sirajchokshi.github.io/StudioTheme/">Demo</a>
+      </div>
     </div>
-
-    <div class="project-block" id="proj2" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-bottom"  data-aos-delay="200"><a href="https://sirajchokshi.github.io/self-driving/" target="_blank">
-      <div class="project-text-wrapper">
-        <h3>Self-Driving Trucks</h3>
-        <p class="project-bio">A brief look into the world of self-driving logistics trucks. <br> Read more...</p>
-        <div class="project-arrow"></div>
-      </div></a>
+    <div class="row">
+      <div class="one-half column">
+        <h4>&#x1F58D; BrandColors.CSS</h4>
+        <p>Stop looking for that specific HEX, HSL or RGB code. This CSS library contains color codes for all icons in the <a href="https://fortawesome.com/sets/font-awesome-5-brands">FontAwesome Brands</a> set.</p>
+        <a class="button button-primary" href="https://github.com/SirajChokshi/Brand-Colors-CSS">Repository</a>
+        <a class="button" href="http://sirajchokshi.com/BrandColorsCSS/">Website</a>
+      </div>
+      <div class="one-half column">
+        <h4>🚂 Switchers</h4>
+        <p>A simple website featuring a parallax scrolling effect informs readers about train switchers/shunters.</p>
+        <a class="button button-primary" href="https://github.com/SirajChokshi/switcher">Repository</a>
+        <a class="button" href="https://sirajchokshi.github.io/switcher/">Website</a>
+      </div>
     </div>
-
-    <div class="project-block" id="proj3" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-bottom" data-aos-delay="300"><a href="https://sirajchokshi.github.io/switcher/" target="_blank">
-      <div class="project-text-wrapper">
-        <h3>Rail Switchers</h3>
-        <p class="project-bio">A short informational website on train switchers. <br>  Read more...</p>
-        <div class="project-arrow"></div>
-      </div></a>
+    <div class="row">
+      <div class="one-half column">
+        <h4>&#x1F69A; Self-Driving Trucks</h4>
+        <p>Website designed in 2016 describing advancements in the self driving trucking industry and the costs of automation.</p>
+        <a class="button button-primary" href="https://github.com/SirajChokshi/self-driving">Repository</a>
+        <a class="button" href="https://sirajchokshi.github.io/self-driving/">Website</a>
+      </div>
+      <div class="one-half column">
+        <h4>&#x1F4C1; Dotfiles</h4>
+        <p>A group of config/dotfiles I use in my computer setup. Includes config files for zsh, <a href="https://hyper.is/">hyper.js</a>, <a href="https://github.com/koekeishiya/chunkwm">chunkwm</a> and <a href="https://github.com/koekeishiya/skhd">skhd</a>.</p>
+        <a class="button button-primary" href="https://github.com/SirajChokshi/dotfiles">Repository</a>
+      </div>
     </div>
+  </div>
 
-    <div class="project-block" id="proj4" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="middle-bottom" data-aos-delay="350"><a href="https://sirajchokshi.com/work" target="_blank">
-      <div class="project-text-wrapper">
-        <h3>UX & Graphic Design</h3>
-        <p class="project-bio">My portfolio featuring work from over the last few years of designing interfaces, logos and more. <span class="showOnMobile"><br></span> Read more...</p>
-        <div class="project-arrow"></div>
-      </div></a>
-    </div>
-
-    <div class="project-block" id="proj5" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="middle-bottom" data-aos-delay="400"><a href="https://sirajchokshi.com/rotocons/" target="_blank">
-      <div class="project-text-wrapper">
-        <h3>Rotocons</h3>
-        <p class="project-bio">A circular icon pack based on OS X Yosemite's flat UI. <br> Read more...</p>
-        <div class="project-arrow"></div>
-      </div></a>
-    </div>
-
-    <div class="project-block" id="proj6" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="middle-bottom" data-aos-delay="450"><a href="https://github.com/SirajChokshi/my-setup" target="_blank">
-      <div class="project-text-wrapper">
-        <h3>My Setup Dotfiles</h3>
-        <p class="project-bio">A group of config/dotfiles I use for my UX/Graphic/Web design setup on macOS. <span class="showOnMobile"><br></span> Read more...</p>
-        <div class="project-arrow"></div>
-      </div></a>
-    </div>
-
-    <div class="project-block" id="proj7" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="middle-bottom" data-aos-delay="450"><a href="https://unsplash.com/@sirajchokshi" target="_blank">
-      <div class="project-text-wrapper">
-        <h3>Photography</h3>
-        <p class="project-bio">A gallery of photos I have taken over the last few years. <span class="showOnMobile"><br></span> Read more...</p>
-        <div class="project-arrow"></div>
-      </div></a>
-    </div>
-
-
-  </section>
-
-
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
-
-<script>
-  AOS.init();
-</script>
-
 </html>
