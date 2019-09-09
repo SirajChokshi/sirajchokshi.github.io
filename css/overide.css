@@ -14,128 +14,49 @@ h4 {
   font-weight: 500;
 }
 
-.linkout {
-  margin-top: 15px;
+svg .rotate {
+  animation: rotate 1.3s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
-.about p, .education, .experience {
-  font-size: 16px;
+svg .bounce {
+  animation: bounce 1.5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
-.header {
-   margin-top: 40px;
+svg .crate {
+  animation: tilt 3s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
-.two.columns { width: 13.3333333333%; }
-.ten.columns {
-  width: 78.6666666667%;
-  margin-left: 4%;
+svg .crate-alt {
+  animation: tilt-alt 3s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
-.education .date, .education .desc {
-  margin: 0;
-  margin-bottom: 2px;
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
-.date {
-  color: #999;
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
+  100% { transform: translateY(0); }
 }
 
-.education h4 {
-  margin-bottom: 5px;
+@keyframes tilt {
+  0% { transform: rotate(0deg) translateY(0px) translateX(2px);}
+  50% { transform: rotate(16deg) translateY(6px) translateX(-2.3px); }
+  100% { transform: rotate(0deg) translateY(0px) translateX(2px); }
 }
 
-.experience, .education {
-  margin-top: 10px;
-  margin-bottom: 2.5rem;
-}
-
-.experience h4 {
-  margin-bottom: 2px;
-}
-
-.experience .two img, .education .two img {
-  width: 100%;
-  max-width: 100px;
-  border-radius: 4px;
-}
-
-.experience .date, .experience .job {
-  margin: 0;
-  margin-bottom: 2px;
-}
-
-ul.desc {
-  margin-top: 2px;
-}
-
-ul.desc li {
-  margin: 0;
-}
-
-.cur {
-  color: #1EAEDB;
-}
-
-.social {
-  font-size: 38px;
-  text-align: left;
-}
-
-.social a svg, .social a:visited svg {
-  margin-right: 10px;
-  color: #999;
-  width: 38px;
-  /* transition: color 0.5s; */
-}
-
-.social a:hover svg {
-  color: #000;
-}
-
-.social a:hover .fa-dribbble {
-  color: #ea4c89;
-}
-
-.social a:hover .fa-twitter {
-  color: #1da1f2;
-}
-
-.social a .fa-linkedin {
-  margin-bottom: -2px;
-}
-
-.social a:hover .fa-linkedin {
-  color: #0077b5;
-}
-
-@media (min-width: 550px) {
-  .social {
-    font-size: 38px;
-    text-align: right;
-  }
-  .social a svg {
-    margin-right: 0;
-    margin-left: 14px;
-    color: #999;
-    transition: color 0.2s;
-  }
-
-  .experience .two img, .education .two img {
-    border-radius: 7px;
-  }
-
-  .header {
-     margin-top: 100px;
-  }
-
-  .experience, .education {
-    font-size: 14px;
-  }
-
-  .linkout {
-    margin-top: 0;
-  }
-
-
+@keyframes tilt-alt {
+  0% { transform: rotate(0deg) translateY(0px);}
+  50% { transform: rotate(10deg) translateY(10px) translateX(-4px); }
+  100% { transform: rotate(0deg) translateY(0px); }
 }
