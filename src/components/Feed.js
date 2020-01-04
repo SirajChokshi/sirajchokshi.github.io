@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import RepoCard from './RepoCard/RepoCard';
-import Tag from "./Tag/Tag";
-import {Link} from 'react-router-dom';
 import {connect} from "react-redux";
-
-
-let borderColor, langTextColor;
 
 class Feed extends Component {
     state = {

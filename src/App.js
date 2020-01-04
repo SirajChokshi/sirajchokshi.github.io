@@ -1,7 +1,7 @@
 import React from "react";
 import { projects } from "./static/projects";
 import Feed from "./components/Feed";
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import Filter from "./components/Filter/Filter";
 import Footer from "./components/Footer/Footer";
 
