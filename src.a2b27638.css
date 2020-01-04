@@ -1,0 +1,267 @@
+.repo-card {
+    box-sizing: border-box;
+    padding: 10px 15px 10px 20px;
+    width: calc(33.3333333% - 20px);
+    position: relative;
+    height: 275px;
+    margin: 10px;
+    float: left;
+    border-radius: 10px;
+    display: inline-block;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+            0 12.5px 10px rgba(0, 0, 0, 0.035),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+            0 100px 80px rgba(0, 0, 0, 0.07)
+;
+    border-left: 40px solid rgba(255, 204, 0, 0.2);
+    border-left-color: red;
+}
+
+.repo-card:hover {
+    /*transform: scale(1.03) translateZ(0) perspective(1px);*/
+    transform: translateY(-5px);
+}
+
+.repo-card h3 {
+    margin-bottom: 0.5em;
+}
+
+.repo-card .date {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+.repo-card .desc {
+    margin-top: 1em;
+}
+
+.repo-card .lang {
+    /*color: rgba(230, 190, 0, 1);*/
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    letter-spacing: 2px;
+    font-weight: 600;
+    bottom: 0;
+    left: 0;
+    margin-left: -30px;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .repo-card {
+        width: calc(50% - 20px);
+        min-height: 250px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .repo-card {
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .repo-card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        min-height: 250px;
+        height: auto;
+    }
+}
+.tag {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 4px;
+    font-weight: 500;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tag:hover {
+    transform: translateY(-2px);
+}
+
+.tag.del:hover {
+    transform: none;
+}
+form {
+    width: 40%;
+    padding-left: 10%;
+    vertical-align: top;
+    display: inline-block;
+    height: 78px;
+}
+
+form label {
+    font-size: 18px;
+    display: inline-block;
+    padding-right: 10px;
+    color: #999;
+}
+
+form input {
+    display: inline-block;
+    width: 90%;
+    border: none;
+    color: #999;
+    padding-bottom: 8px;
+    border-bottom: solid 2px #cccccc;
+    font-size: 22px;
+    font-weight: 500;
+    -webkit-transition: border 0.2s;
+    -moz-transition: border 0.2s;
+    -ms-transition: border 0.2s;
+    -o-transition: border 0.2s;
+    transition: border 0.2s;
+}
+
+form input::placeholder {
+    color: #999;
+}
+
+form input:focus {
+    border-bottom: solid 2px #6756FF;
+    outline: none;
+}
+
+#exit-tags {
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #ffd3cf;
+    color: #ff2e17;
+    padding: 5px 10px;
+    margin-right: 4px;
+    font-weight: 500;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#exit-tags:hover {
+    transform: translateY(-2px);
+}
+footer {
+    padding: 3vh 0;
+}
+
+footer #copy {
+    margin-top: 0.5em;
+    display: block;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #121212;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #121212;
+}
+
+header {
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+header h1 a, header h1 a:visited {
+    font-size: 32px;
+}
+
+header #bio {
+    margin: 0;
+    width: 50%;
+    font-size: 22px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.row {
+    width: 100%;
+    margin: 22px 0;
+}
+
+.tag-wrapper {
+    margin: 15px 0;
+}
+
+form .tag-wrapper {
+    margin: 0;
+}
+
+img.header-profile {
+    border-radius: 50%;
+    height: 1.5em;
+    margin-top: -0.125em;
+    margin-right: 0.125em;
+    width: 1.5em;
+    display: inline-block;
+    vertical-align:top;
+}
+
+@media only screen and (max-width: 975px) {
+    header #bio {
+        width: 100%;
+    }
+
+    header form {
+        width: 100%;
+        padding: 30px 0 0 0;
+    }
+
+    header .row {
+        margin-bottom: 0;
+    }
+
+    form {
+        margin-bottom: 35px;
+    }
+}
+
+/*# sourceMappingURL=/src.a2b27638.css.map */
