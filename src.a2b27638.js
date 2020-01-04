@@ -51349,10 +51349,6 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _RepoCard = _interopRequireDefault(require("./RepoCard/RepoCard"));
 
-var _Tag = _interopRequireDefault(require("./Tag/Tag"));
-
-var _reactRouterDom = require("react-router-dom");
-
 var _reactRedux = require("react-redux");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
@@ -51360,8 +51356,6 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var borderColor, langTextColor;
 
 var Feed =
 /*#__PURE__*/
@@ -51466,7 +51460,7 @@ var mapStateToProps = function mapStateToProps(state) {
 var _default = (0, _reactRedux.connect)(mapStateToProps)(Feed);
 
 exports.default = _default;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","react":"node_modules/react/index.js","./RepoCard/RepoCard":"src/components/RepoCard/RepoCard.js","./Tag/Tag":"src/components/Tag/Tag.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","react-redux":"node_modules/react-redux/es/index.js"}],"src/components/Filter/Filter.css":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","react":"node_modules/react/index.js","./RepoCard/RepoCard":"src/components/RepoCard/RepoCard.js","react-redux":"node_modules/react-redux/es/index.js"}],"src/components/Filter/Filter.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -51852,7 +51846,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60114" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64941" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
