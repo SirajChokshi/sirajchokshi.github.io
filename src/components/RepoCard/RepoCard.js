@@ -17,7 +17,7 @@ export default class RepoCard extends Component {
     render () {
         switch(this.props.lang) {
             case "HTML":
-                borderColor = "#e6937c";
+                borderColor = "#ffa991";
                 langTextColor = "#873a0c";
                 break;
             case "JavaScript":
@@ -32,7 +32,17 @@ export default class RepoCard extends Component {
                 borderColor = "rgba(78,6,145,0.2)";
                 langTextColor = "rgb(127,41,193)";
                 break;
+            case "Shell":
+                borderColor = "#87ff8f";
+                langTextColor = "#0e7313";
+                break;
+            case "Python":
+                borderColor = "#aebdd4";
+                langTextColor = "#133e61";
+                break;
             default:
+                borderColor = "#121212";
+                langTextColor = "#ffffff";
                 break;
         }
 

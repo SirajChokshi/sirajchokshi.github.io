@@ -57,5 +57,34 @@ export const projects = [
     github: 'https://github.com/SirajChokshi/sirajchokshi.github.io',
     lang: 'React',
     tags: ['React.JS', 'JavaScript']
+  },
+  {
+    id: 'web-archive',
+    name: 'Personal Web Archive',
+    desc: 'A web archive of my previous projects and personal sites which have now been retired.',
+    date: '2019',
+    github: 'https://github.com/SirajChokshi/archive',
+    website: 'https://archive.sirajchokshi.com',
+    lang: 'HTML',
+    tags: ['HTML', 'CSS', 'JavaScript']
+  },
+  {
+    id: 'delineated-theme',
+    name: 'Delineated Theme',
+    desc: 'An open source, customizable HTML5 portfolio for artists. Originally developed for students at my high school.',
+    date: '2018',
+    github: 'https://github.com/SirajChokshi/DelineatedTheme',
+    website: 'https://sirajchokshi.github.io/DelineatedTheme',
+    lang: 'CSS',
+    tags: ['CSS', 'HTML']
+  },
+  {
+    id: 'dotfiles',
+    name: 'Dotfiles',
+    desc: 'My configuration files for window management, shell (zsh) and scripting running on a macOS Mojave 10.14',
+    date: '2018',
+    github: 'https://github.com/SirajChokshi/Dotfiles',
+    lang: 'Shell',
+    tags: ['System', 'Unix']
   }
 ];

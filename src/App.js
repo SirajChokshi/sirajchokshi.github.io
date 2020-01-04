@@ -5,6 +5,16 @@ import {BrowserRouter as Router, Link} from 'react-router-dom';
 import Filter from "./components/Filter/Filter";
 import Footer from "./components/Footer/Footer";
 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        let temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+shuffleArray(projects);
+
 export default () => (
     <Router>
       <div className="container">

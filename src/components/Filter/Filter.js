@@ -22,7 +22,7 @@ class Filter extends Component {
             <form>
                 <label htmlFor="search-bar"><FontAwesomeIcon icon={search} /></label>
                 <input id="search-bar" onChange={this.handleFilterChange} type="search" placeholder="Filter (e.g. 'react app')" />
-                <div className="tag-wrapper" style={{marginTop: "1em"}}>
+                <div className="tag-wrapper" style={{marginTop: "0.5em"}}>
                 {
                     this.props.tags.map(post => (
                         <Tag

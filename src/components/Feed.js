@@ -21,11 +21,10 @@ class Feed extends Component {
 
     isQueryMatched(post) {
         const q = this.props.search.toLowerCase();
-        if (post.name.toLowerCase().includes(q)) return true;
-        else if (post.desc.toLowerCase().includes(q)) return true;
-        else if (post.date.toLowerCase().includes(q)) return true;
-        // else if (post.lang.toLowerCase().includes(q)) return true;
-        return false;
+        for (let i = 0; i < post.tags.length; i++) {
+            if (post.tags[i].toLowerCase().includes(q)) return true;
+        }
+        return post.lang.toLowerCase().includes(q) || post.date.toLowerCase().includes(q) || post.desc.toLowerCase().includes(q) || post.name.toLowerCase().includes(q);
     }
 
 
@@ -50,7 +49,7 @@ class Feed extends Component {
 
             return (
                 <>
-                <div style={{clear: "both", marginTop: "0.5em", minHeight: "480px"}}>
+                <div className="repo-card-wrapper" style={{clear: "both", marginTop: "1.5em", minHeight: "53vh"}}>
                     {results.map(post => (
                         <RepoCard
                             key={post.id}
