@@ -16,7 +16,7 @@ export default class Footer extends Component {
                     <a href="https://github.com/sirajchokshi" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={github} /> Github</a> &nbsp;|&nbsp;&nbsp;
                     <a href="https://linkedin.com/in/sirajchokshi" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={linkedin} /> LinkedIn</a> &nbsp;|&nbsp;&nbsp;
                     <a href="https://dribbble.com/sirajchokshi" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={dribbble} /> Dribbble</a>
-                    <span id="copy">&copy; Copyright {(new Date()).getFullYear()}. <a href="https://sirajchokshi.com">Siraj Chokshi</a></span>
+                    <span id="copy">&copy; Copyright {(new Date()).getFullYear()} <a href="https://sirajchokshi.com">Siraj Chokshi</a></span>
                 </p>
             </footer>
         )
