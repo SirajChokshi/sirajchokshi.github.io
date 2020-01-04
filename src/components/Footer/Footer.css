@@ -1,0 +1,17 @@
+footer {
+    padding: 3vh 0;
+}
+
+footer #copy {
+    margin-top: 0.5em;
+    display: block;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

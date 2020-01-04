@@ -1,0 +1,24 @@
+.tag {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 4px;
+    font-weight: 500;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tag:hover {
+    transform: translateY(-2px);
+}
+
+.tag.del:hover {
+    transform: none;
+}
