@@ -27,6 +27,8 @@ form input {
     -ms-transition: border 0.2s;
     -o-transition: border 0.2s;
     transition: border 0.2s;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
 }
 
