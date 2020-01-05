@@ -51695,27 +51695,32 @@ var _Footer = _interopRequireDefault(require("./components/Footer/Footer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function shuffleArray(array) {
-  for (var i = array.length - 1; i > 0; i--) {
+function shuffle(arr) {
+  for (var i = arr.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
-    var temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
+    var temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
   }
 }
 
-shuffleArray(_projects.projects);
+shuffle(_projects.projects);
 
 var _default = function _default() {
   return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("div", {
     className: "container"
-  }, _react.default.createElement("header", null, _react.default.createElement("h1", null, _react.default.createElement("a", {
-    href: "https://sirajchokshi.com"
-  }, _react.default.createElement("img", {
+  }, _react.default.createElement("header", null, _react.default.createElement("h1", null, _react.default.createElement("img", {
     src: "https://i.imgur.com/trdF8yX.jpg",
     className: "header-profile",
     alt: ""
-  }), " Siraj Chokshi")), _react.default.createElement("div", {
+  }), " Siraj Chokshi"), _react.default.createElement("a", {
+    id: "back-to-home",
+    href: "https://sirajchokshi.com"
+  }, "\u2190 Back to main site"), _react.default.createElement("div", {
+    style: {
+      clear: "both"
+    }
+  }), _react.default.createElement("div", {
     className: "row"
   }, _react.default.createElement("p", {
     id: "bio"
@@ -51846,7 +51851,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64941" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51159" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
