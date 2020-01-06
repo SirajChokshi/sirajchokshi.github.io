@@ -13,9 +13,9 @@ export default class Footer extends Component {
         return (
             <footer>
                 <p>
-                    <a href="https://github.com/sirajchokshi" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={github} /> Github</a> &nbsp;|&nbsp;&nbsp;
-                    <a href="https://linkedin.com/in/sirajchokshi" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={linkedin} /> LinkedIn</a> &nbsp;|&nbsp;&nbsp;
-                    <a href="https://dribbble.com/sirajchokshi" target="_blank" rel="noreferrer noopener"><FontAwesomeIcon icon={dribbble} /> Dribbble</a>
+                    <a href="https://github.com/sirajchokshi" target="_blank" rel="noreferrer noopener" style={{backgroundColor: "#121212", color: "white"}}><FontAwesomeIcon icon={github} /> Github</a> &nbsp;
+                    <a href="https://linkedin.com/in/sirajchokshi" target="_blank" rel="noreferrer noopener" style={{backgroundColor: "#dbf3ff", color: "#0077b5"}}><FontAwesomeIcon icon={linkedin} /> LinkedIn</a> &nbsp;
+                    <a href="https://dribbble.com/sirajchokshi" target="_blank" rel="noreferrer noopener" style={{backgroundColor: "#f7bcd3", color: "#cc2d6b"}}><FontAwesomeIcon icon={dribbble} /> Dribbble</a>
                     <span id="copy">&copy; Copyright {(new Date()).getFullYear()} <a href="https://sirajchokshi.com">Siraj Chokshi</a></span>
                 </p>
             </footer>
