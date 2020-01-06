@@ -51647,19 +51647,31 @@ function (_Component) {
       return _react.default.createElement("footer", null, _react.default.createElement("p", null, _react.default.createElement("a", {
         href: "https://github.com/sirajchokshi",
         target: "_blank",
-        rel: "noreferrer noopener"
+        rel: "noreferrer noopener",
+        style: {
+          backgroundColor: "#121212",
+          color: "white"
+        }
       }, _react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
         icon: _freeBrandsSvgIcons.faGithub
-      }), " Github"), " \xA0|\xA0\xA0", _react.default.createElement("a", {
+      }), " Github"), " \xA0", _react.default.createElement("a", {
         href: "https://linkedin.com/in/sirajchokshi",
         target: "_blank",
-        rel: "noreferrer noopener"
+        rel: "noreferrer noopener",
+        style: {
+          backgroundColor: "#dbf3ff",
+          color: "#0077b5"
+        }
       }, _react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
         icon: _freeBrandsSvgIcons.faLinkedin
-      }), " LinkedIn"), " \xA0|\xA0\xA0", _react.default.createElement("a", {
+      }), " LinkedIn"), " \xA0", _react.default.createElement("a", {
         href: "https://dribbble.com/sirajchokshi",
         target: "_blank",
-        rel: "noreferrer noopener"
+        rel: "noreferrer noopener",
+        style: {
+          backgroundColor: "#f7bcd3",
+          color: "#cc2d6b"
+        }
       }, _react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
         icon: _freeBrandsSvgIcons.faDribbble
       }), " Dribbble"), _react.default.createElement("span", {
@@ -51851,7 +51863,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51159" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55272" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
